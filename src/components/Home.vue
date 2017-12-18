@@ -8,7 +8,7 @@
 
 <style lang="sass" scoped>
   p
-    color: blue
+    color: red
 </style>
 
 <script>
@@ -21,13 +21,7 @@
       };
     },
     methods: {
-      // getRandomInt (min, max) {
-      //   min = Math.ceil(min)
-      //   max = Math.floor(max)
-      //   return Math.floor(Math.random() * (max - min - 1)) + min
-      // },
       getRandom() {
-        // this.randomNumber = this.getRandomInt(1, 100)
         this.randomNumber = this.getRandomFromBackend();
       },
       getRandomFromBackend() {
