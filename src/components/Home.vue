@@ -7,8 +7,7 @@
 </template>
 
 <style lang="sass" scoped>
-  p
-    color: red
+  @import "~styles/home-test"
 </style>
 
 <script>
