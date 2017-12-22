@@ -59,17 +59,17 @@ exports.cssLoaders = function (options) {
     css: generateLoaders(),
     postcss: generateLoaders(),
     less: generateLoaders('less'),
-    sass: generateLoaders('sass', { indentedSyntax: true }).concat(
+    sass: generateLoaders('sass', { indentedSyntax: true }),
+    scss: generateLoaders('sass'),
+    stylus: generateLoaders('stylus'),
+    styl: generateLoaders('stylus').concat(
       {
-        loader: 'sass-resources-loader',
+        loader: 'stylus-resources-loader',
         options: {
-          resources: path.resolve(__dirname, '../src/assets/sass/_variable.sass')
+          resources: path.resolve(__dirname, '../src/assets/styles/variable.styl')
         }
       }
     ),
-    scss: generateLoaders('sass'),
-    stylus: generateLoaders('stylus'),
-    styl: generateLoaders('stylus')
   }
 }
 

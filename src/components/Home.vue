@@ -6,7 +6,7 @@
   </div>
 </template>
 
-<style lang="sass" scoped>
+<style lang="styl" scoped>
   @import "~styles/home-test"
 </style>
 
